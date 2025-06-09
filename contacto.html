@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Contacto - La Roca de Guía</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header role="banner" aria-label="Encabezado de contacto">
+    <h1>Contacto y Reservas</h1>
+    <nav role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Formulario creado y de parte de css para el formato -->
+  <main role="main" aria-label="Formulario de contacto y reservas">
+    <p>¿Tienes dudas? ¿Quieres reservar un juego? Llena el siguiente formulario:</p>
+
+    <form aria-label="Formulario de contacto de La Ludoteca">
+      <label for="nombre">Nombre completo:</label>
+      <input id="nombre" name="nombre" type="text" required aria-required="true">
+
+      <label for="correo">Correo electrónico:</label>
+      <input id="correo" name="correo" type="email" required aria-required="true">
+
+      <label for="juego">Juego que deseas:</label>
+      <input id="juego" name="juego" type="text" placeholder="Ej: Dixit">
+
+      <fieldset aria-labelledby="tipo-cliente">
+        <legend id="tipo-cliente">Tipo de cliente</legend>
+        <label><input type="radio" name="cliente" value="nuevo" checked> Nuevo</label>
+        <label><input type="radio" name="cliente" value="recurrente"> Recurrente</label>
+      </fieldset>
+
+      <label for="fecha">Fecha de recogida:</label>
+      <input id="fecha" name="fecha" type="date">
+
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4" aria-multiline="true"></textarea>
+
+      <label>
+        <input type="checkbox" name="terminos" required aria-required="true">
+        Acepto términos y condiciones
+      </label>
+
+      <button type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
+    </form>
+  </main>
+
+  <footer role="contentinfo" aria-label="Pie de página">
+    <p>Síguenos en redes sociales:</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/larocadeguia?igsh=NTR3eWM5ZGU4ejlv" target="_blank" aria-label="Instagram">
+        <img src="img/instagram.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/share/19FbzTk9YY/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+        <img src="img/facebook2.jpg" alt="Facebook">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

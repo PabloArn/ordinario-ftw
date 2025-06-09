@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Roca de Guía - Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> <!-- Se crea el cuerpo del html, se manda a llamar los estilos y se agrega lo necesario para la accesibilidad -->
+  <header role="banner" aria-label="Encabezado principal de La Roca de Guía">
+    <h1>La Roca de Guía</h1>
+    <nav role="navigation" aria-label="Menú principal">
+      <ul> <!-- Creación/llamado de las ventanas (3 ventanas/paginas web) -->
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main" aria-label="Contenido principal de la página de inicio">
+    <article aria-labelledby="bienvenida">
+      <h2 id="bienvenida">Bienvenido a tu rincón de juegos de mesa</h2>
+      <p>Explora nuevos mundos, estrategias y desafíos con nuestra colección y nuestras instalaciones.</p>
+      <!-- Imagen agregada desde la carpeta "img" donde se puede visualizar y se ouede describir con su pie de página -->
+      <img src="img/mesadejuegos.png" alt="Mesa con varios juegos de mesa" aria-describedby="descripcion-imagen" class="imagen-inicio">
+      <p id="descripcion-imagen" hidden>Imagen con varios juegos desplegados sobre una mesa de madera clara.</p>
+      <button onclick="location.href='catalogo.html'" aria-label="Ir al catálogo de juegos">Ver Catálogo</button>
+    </article>
+
+    <section aria-labelledby="mision">
+      <h2 id="mision">Nuestra misión</h2>
+      <p>En La Roca de Guía, creemos que los juegos de mesa no solo entretienen, sino que también fortalecen vínculos, desarrollan habilidades y despiertan la imaginación; que mejor que pasarla bien mientras aprendemos todo esto.</p>
+    </section>
+
+    <section aria-labelledby="ofrecemos">
+      <h2 id="ofrecemos">¿Qué ofrecemos?</h2>
+      <ul>
+        <li>Amplia variedad de juegos para todas las edades y gustos.</li>
+        <li>Eventos semanales de demostración y torneos amistosos.</li>
+        <li>Asesoría personalizada para elegir el juego ideal.</li>
+        <li>Te explicamos el juego que buscas.</li>
+        <li>Venta de juegos de mesa.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="porqueelegirnos">
+      <h2 id="porqueelegirnos">¿Por qué elegirnos?</h2>
+      <p>Somos apasionados por los juegos de mesa. Nuestra experiencia garantiza que cada cliente encuentre justo lo que busca, la pase bien y disfrute de una tarde y un excelente momento con nuestro apoyo.</p>
+    </section>
+  </main>
+
+  <!-- Pie de página que se agrega en todas las ventanas para poder hacer el llamado de las redes sociales -->
+  <footer role="contentinfo" aria-label="Pie de página">
+    <p>Síguenos en redes sociales:</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/larocadeguia?igsh=NTR3eWM5ZGU4ejlv" target="_blank" aria-label="Instagram">
+        <img src="img/instagram.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/share/19FbzTk9YY/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+        <img src="img/facebook2.jpg" alt="Facebook">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

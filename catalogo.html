@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo - La Roca de Guía</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <!-- Llamado del java.js donde se encuentra la información de los juegos de mesa -->
+  <script src="catalogo.js" defer></script>
+</head>
+<body>
+  <header role="banner" aria-label="Encabezado del catálogo">
+    <h1>Catálogo</h1>
+    <nav role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main" aria-label="Catálogo de juegos de mesa">
+    <h2>Explora nuestra colección</h2>
+    <p>Te ofrecemos una selección elegida sabiamente de juegos para todas las edades. Algunos de ellos son los siguientes, ¿buscas alguno en especifico? pasa a visitarnos o pregunta en el apartado de "Contacto".</p>
+
+    <table id="tablaJuegos" role="table" aria-label="Lista de algunos juegos disponibles"></table>
+
+    <section aria-labelledby="categorias">
+      <h3 id="categorias">Categorías destacadas</h3>
+      <ul>
+        <li><strong>Familiares:</strong> para todas las edades, con reglas simples.</li>
+        <li><strong>Estrategia:</strong> para quienes disfrutan pensar varios pasos adelante.</li>
+        <li><strong>Party:</strong> ideales para grupos grandes y risas aseguradas.</li>
+        <li><strong>Cooperativos:</strong> para ganar (o perder) juntos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer role="contentinfo" aria-label="Pie de página">
+    <p>Síguenos en redes sociales:</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/larocadeguia?igsh=NTR3eWM5ZGU4ejlv" target="_blank" aria-label="Instagram">
+        <img src="img/instagram.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/share/19FbzTk9YY/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+        <img src="img/facebook2.jpg" alt="Facebook">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

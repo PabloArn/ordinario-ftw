@@ -1,0 +1,37 @@
+<juegos>
+  <juego>
+    <nombre>Catan</nombre>
+    <categoria>Estrategia</categoria>
+    <jugadores>3-4</jugadores>
+    <duracion>90</duracion>
+    <precio>750</precio>
+  </juego>
+  <juego>
+    <nombre>Uno</nombre>
+    <categoria>Familiar</categoria>
+    <jugadores>2-10</jugadores>
+    <duracion>30</duracion>
+    <precio>150</precio>
+  </juego>
+  <juego>
+    <nombre>Dixit</nombre>
+    <categoria>Creativo</categoria>
+    <jugadores>3-6</jugadores>
+    <duracion>45</duracion>
+    <precio>900</precio>
+  </juego>
+  <juego>
+    <nombre>Taboo</nombre>
+    <categoria>Party</categoria>
+    <jugadores>3+</jugadores>
+    <duracion>20</duracion>
+    <precio>500</precio>
+  </juego>
+  <juego>
+    <nombre>Polilla Tramposa</nombre>
+    <categoria>Familiar</categoria>
+    <jugadores>3-6</jugadores>
+    <duracion>20</duracion>
+    <precio>350</precio>
+  </juego>
+</juegos>
